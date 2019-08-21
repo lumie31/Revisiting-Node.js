@@ -33,7 +33,8 @@ var getAll = () => {
 };
 
 var readNote = title => {
-  console.log("Reading Note:", title);
+  var notes = fetchNotes();
+  return notes.filter(note => note.title === title)[0];
 };
 
 var removeNote = title => {
