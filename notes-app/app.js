@@ -20,7 +20,8 @@ if (command === "add") {
 } else if (command === "list") {
   notes.getAll();
 } else if (command === "read") {
-  notes.readNote(argv.title);
+  var note = notes.readNote(argv.title);
+  note ? console.log("Note exists") : console.log("Note doesn't exist");
 } else if (command === "remove") {
   var note = notes.removeNote(argv.title);
   note
