@@ -31,4 +31,3 @@ const geocodeAddress = (address, callback) => {
 module.exports = {
   geocodeAddress
 };
-// module.exports.geocodeAddress = geocodeAddress;
